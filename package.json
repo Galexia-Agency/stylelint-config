@@ -1,10 +1,9 @@
 {
   "name": "stylelint-config-galexia",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": ".stylelintrc.js",
   "packageManager": "yarn@3.6.3",
   "dependencies": {
-    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-processor-html": "^1.0.0",

@@ -8,11 +8,19 @@ module.exports = {
   processors: ['stylelint-processor-html'],
   extends: [
     'stylelint-config-standard-scss',
-    'stylelint-config-rational-order',
     'stylelint-config-recommended-vue'
+  ],
+  plugins: [
+    'stylelint-order',
+    'stylelint-config-galexia/plugin'
   ],
   defaultSeverity: 'warning',
   rules: {
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": false,
+    }],
     'custom-property-empty-line-before': null,
     'selector-id-pattern': null,
     'declaration-property-value-no-unknown': true,
