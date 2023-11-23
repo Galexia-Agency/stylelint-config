@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-galexia",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": ".stylelintrc.js",
   "packageManager": "yarn@3.6.3",
   "dependencies": {
