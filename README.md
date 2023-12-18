@@ -42,3 +42,17 @@ modules: [
 ]
 ...
 ```
+
+### Configuring with VSCode
+
+1. Install [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+2. Add `scss` and `vue` to `Snippet` and `Validate` plugin settings.
+3. Add the following to `.vscode/settings.json`
+
+  ```json
+  {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  }
+  ```
