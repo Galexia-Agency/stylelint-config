@@ -1,5 +1,6 @@
 # Stylelint Config
-A base stylelint config for use across Galexia's projects
+
+A base Stylelint config for use across Galexia's projects
 
 ## Install
 
@@ -8,6 +9,7 @@ yarn add stylelint stylelint-config-galexia@https://github.com/Galexia-Agency/st
 ```
 
 .stylelintrc
+
 ```json
 {
   "extends": "stylelint-config-galexia"
@@ -15,7 +17,9 @@ yarn add stylelint stylelint-config-galexia@https://github.com/Galexia-Agency/st
 ```
 
 ### Scripts
+
 package.json
+
 ```json
 "scripts": {
     "lint:styles": "stylelint \"**/*.{vue,scss}\"",
@@ -24,11 +28,13 @@ package.json
 ```
 
 ### Configuring with Nuxt
+
 ```bash
 yarn add @nuxtjs/stylelint-module --dev
 ```
 
 nuxt.config.js
+
 ```js
 ...
 modules: [
