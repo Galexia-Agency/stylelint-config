@@ -1,8 +1,15 @@
 {
-  "name": "stylelint-config-galexia",
-  "version": "1.0.6",
+  "name": "@galexia-agency/stylelint-config-galexia",
+  "version": "2.0.0",
   "main": ".stylelintrc.js",
   "packageManager": "yarn@3.6.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Galexia-Agency/stylelint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard-scss": "^7.0.1",
