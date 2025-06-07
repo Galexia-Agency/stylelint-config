@@ -19,14 +19,6 @@ Create or update a `.npmrc` file and include:
 
 Replace `<GITHUB_TOKEN>` with a [personal access token](https://github.com/settings/tokens) that has `read:packages` permissions.
 
-.stylelintrc
-
-```json
-{
-  "extends": "stylelint-config-galexia"
-}
-```
-
 ### Scripts
 
 package.json
@@ -35,6 +27,16 @@ package.json
 "scripts": {
     "lint:styles": "stylelint \"**/*.{vue,scss}\"",
     "fix:styles": "stylelint \"**/*.{vue,scss}\" --fix"
+}
+```
+
+### Configuration
+
+.stylelintrc
+
+```json
+{
+  "extends": "stylelint-config-galexia"
 }
 ```
 
