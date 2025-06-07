@@ -5,7 +5,6 @@ module.exports = {
       customSyntax: 'postcss-scss'
     }
   ],
-  processors: ['stylelint-processor-html'],
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue'
