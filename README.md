@@ -43,7 +43,7 @@ package.json
 ### Configuring with Nuxt
 
 ```bash
-yarn add @nuxtjs/stylelint-module --dev
+pnpm add -D @nuxtjs/stylelint-module
 ```
 
 nuxt.config.js
