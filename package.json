@@ -1,8 +1,14 @@
 {
-  "name": "stylelint-config-galexia",
-  "version": "1.0.6",
+  "name": "@galexia-agency/stylelint-config-galexia",
+  "version": "2.0.1",
   "main": ".stylelintrc.js",
-  "packageManager": "yarn@3.6.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Galexia-Agency/stylelint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "stylelint-config-recommended-vue": "^1.6.0",
     "stylelint-config-standard-scss": "^15.0.1",
@@ -11,9 +17,8 @@
     "stylelint-order": "^7.0.0",
     "postcss-scss": "^4.0.9",
     "postcss": "8.5.4",
-    "postcss-html": "1.8.0"
+    "postcss-html": "1.8.0",
+    "stylelint": "^16.20.0"
   },
-  "peerDependencies": {
-    "stylelint": "^16.0.0"
-  }
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
 }

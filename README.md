@@ -5,16 +5,19 @@ A base Stylelint config for use across Galexia's projects
 ## Install
 
 ```bash
-yarn add stylelint stylelint-config-galexia@https://github.com/Galexia-Agency/stylelint-config --dev
+pnpm add -D stylelint @galexia-agency/stylelint-config-galexia
 ```
 
-.stylelintrc
+### Add the GitHub registry
 
-```json
-{
-  "extends": "stylelint-config-galexia"
-}
+Create or update a `.npmrc` file and include:
+
+```ini
+@galexia-agency:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<GITHUB_TOKEN>
 ```
+
+Replace `<GITHUB_TOKEN>` with a [personal access token](https://github.com/settings/tokens) that has `read:packages` permissions.
 
 ### Scripts
 
@@ -24,6 +27,16 @@ package.json
 "scripts": {
     "lint:styles": "stylelint \"**/*.{vue,scss}\"",
     "fix:styles": "stylelint \"**/*.{vue,scss}\" --fix"
+}
+```
+
+### Configuration
+
+.stylelintrc
+
+```json
+{
+  "extends": "stylelint-config-galexia"
 }
 ```
 
