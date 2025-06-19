@@ -1,5 +1,8 @@
 const stylelint = require('stylelint');
-const propertiesOrderRule = require('stylelint-order/rules/properties-order');
+const stylelintOrder = require('stylelint-order');
+const propertiesOrderRule = stylelintOrder.default.find(
+  (plugin) => plugin.ruleName === 'order/properties-order'
+).rule;
 const configCreator = require('../config/configCreator');
 
 const ruleName = 'plugin/rational-order';
